@@ -8,9 +8,9 @@ Selector: En CSS, un selector es la parte del código que le dice al navegador a
 
 Ejemplo:
 
-p {
+`p{
     color: blue;
-}
+}`
 
 Aquí el selector es p.
 Significa: Selecciona todos los elemento `<p></p>` (párrafos) de la página y ponles el texto de color azul.
@@ -21,9 +21,9 @@ Existen 3 lugares donde podemos poner CSS:
 
 1. Inline: Defines el style en la etiqueta HTML. Se recomienda no usar nunca esta forma de agregar CSS. 
 Ejemplo:
-<code>
-    <h1 style="color: blue;">Título</h1>
-</code>
+
+`<h1 style="color: blue;">Título</h1>`
+
 
 2. Internal: El CSS interno se escribe dentro de una etiqueta `<style>` en la sección `<head>` del HTML.
 
