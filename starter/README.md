@@ -22,19 +22,18 @@ Existen 3 lugares donde podemos poner CSS:
 1. Inline: Defines el style en la etiqueta HTML. Se recomienda no usar nunca esta forma de agregar CSS.
 
 Ejemplo:
-
 `<h1 style="color: blue;">Título</h1>`
 
 
 2. Internal: El CSS interno se escribe dentro de una etiqueta `<style>` en la sección `<head>` del HTML.
-Ejemplo:
 
+Ejemplo:
 `<style> h1 { color: blue; } </style>`
 
 
 3. External: El CSS externo implica escribir todo el CSS en un archivo separado (style.css) y enlazarlo al HTML usando una etiqueta `<link>` en el `<head>`.
 
-Ejemplo `<link />`
+Ejemplo `<link />`:
 `<link rel="stylesheet" href="style.css">`
 
 ## Recursos:
