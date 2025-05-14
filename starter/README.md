@@ -34,6 +34,8 @@ Ejemplo:
 
 3. External: El CSS externo implica escribir todo el CSS en un archivo separado (style.css) y enlazarlo al HTML usando una etiqueta `<link>` en el `<head>`.
 
+Ejemplo `<link />`
+`<link rel="stylesheet" href="style.css">`
 
 ## Recursos:
 URL: https://itauchile.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/learn/lecture/27511920#overview
