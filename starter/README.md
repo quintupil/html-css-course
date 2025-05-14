@@ -29,11 +29,7 @@ Ejemplo:
 2. Internal: El CSS interno se escribe dentro de una etiqueta `<style>` en la sección `<head>` del HTML.
 Ejemplo:
 
-`<style>` 
-    `h1 {`
-        `color: blue;`
-    `}` 
-`</style>`
+`<style> h1 { color: blue; } </style>`
 
 
 3. External: El CSS externo implica escribir todo el CSS en un archivo separado (style.css) y enlazarlo al HTML usando una etiqueta `<link>` en el `<head>`.
