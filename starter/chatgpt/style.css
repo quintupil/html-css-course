@@ -1,0 +1,48 @@
+/* Estilos generales */
+body {
+  background-color: #f3f3f3;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Título principal */
+h1 {
+  color: #1e90ff;
+  font-size: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Subtítulo */
+h2 {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* Párrafo */
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+
+/* Lista */
+ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+li {
+  font-size: 16px;
+}
