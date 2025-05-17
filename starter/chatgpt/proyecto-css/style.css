@@ -1,0 +1,23 @@
+/* 1. Lista de selectores */
+h1,
+h2,
+p {
+  font-family: sans-serif;
+}
+
+/* 2. Selector descendiente */
+footer p {
+  font-size: 14px;
+  color: gray;
+}
+
+/* 3. Selector descendiente anidado */
+article header p {
+  font-style: italic;
+}
+
+/* 4. Uso de clase (buena práctica) */
+.intro {
+  color: royalblue;
+  font-weight: bold;
+}
