@@ -6,15 +6,21 @@ h4,
 p,
 li {
   font-family: sans-serif;
+  color: #444;
 }
 
+h1, h2, h3 {
+  color: #1098ad;
+}
 /*3. External CSS*/
 h1 {
-  color: blue;
+  /*color: blue;*/
   font-size: 26px;
   /*font-family: sans-serif;*/
   text-transform: uppercase;
   font-style: italic;
+  /*color:rgba(34, 153, 171, 0.42) ejemplo alpha (transparencia)*/
+  /*color: #1098ad;*/
 }
 
 h2 {
@@ -69,4 +75,26 @@ li {
 
 .related{
   list-style: none;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+}
+
+aside {
+  background-color: #f7f7f7;
+
+  /*border: 5px solid #1098ad;*/
+  
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+
+  /*border-radius: 5px;*/ /*- Puntas Redondeadas*/
+
+  /*border-left: 5px solid #1098ad;
+  border-right: 5px solid #1098ad;*/
+}
+
+body {
+  background-color: blue;
 }
