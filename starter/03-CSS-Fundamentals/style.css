@@ -1,5 +1,27 @@
+/*31. CSS Theory #2: Inheritance and the Universal Selector*/
+* {
+  border-top: 10px solid #1098ad;
+}
+/*Not all properties get inherited. It’s mostly ones related to text: font-family, font-size, font-weight, font
+style, color, line-height, letter-spacing, text-align, text-transform, text-shadow, list-style, etc.*/
+
+/*No todas las propiedades se heredan. Principalmente son las relacionadas con el texto: familia de fuentes, tamaño de fuente, peso de fuente, estilo de fuente, color, altura de línea, espaciado de letras, alineación de texto, transformación de texto, sombra de texto, estilo de lista, etc. */
+
+
+body {
+  /*Estas propiedades son heredables. (Textos)*/
+  /*color: red;*/
+  color: #444;
+  font-family: sans-serif;
+
+  /*Esta no es una propiedad heredable*/
+  border-top: 10px solid red;
+
+  
+}
+
 /*24. Combining Selectors*/
-h1,
+/*h1,
 h2,
 h3,
 h4,
@@ -7,7 +29,7 @@ p,
 li {
   font-family: sans-serif;
   color: #444;
-}
+}*/
 
 h1, h2, h3 {
   color: #1098ad;
@@ -183,3 +205,12 @@ a:active {
 footer p {
   color: green;
 }*/
+
+/*nav a:link,
+nav p{
+  font-size: 18px;
+}*/
+
+nav {
+  font-size: 18px;
+}
