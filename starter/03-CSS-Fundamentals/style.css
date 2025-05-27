@@ -1,6 +1,9 @@
 /*31. CSS Theory #2: Inheritance and the Universal Selector*/
 * {
-  border-top: 10px solid #1098ad;
+  /*border-top: 10px solid #1098ad;*/
+  margin: 0;
+  padding: 0;
+
 }
 /*Not all properties get inherited. It’s mostly ones related to text: font-family, font-size, font-weight, font
 style, color, line-height, letter-spacing, text-align, text-transform, text-shadow, list-style, etc.*/
@@ -14,11 +17,54 @@ body {
   color: #444;
   font-family: sans-serif;
 
+  
   /*Esta no es una propiedad heredable*/
-  border-top: 10px solid red;
+  /*border-top: 10px solid red;*/
+
+
 
   
 }
+
+.main-header {
+  background-color: #f7f7f7;
+  /*padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;*/
+
+  /*padding: top/bottom left/right*/
+  padding: 20px 40px; 
+  margin-bottom: 60px;
+
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  /*border: 5px solid #1098ad;*/
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  /*border-radius: 5px;*/ /*- Puntas Redondeadas*/
+  /*border-left: 5px solid #1098ad;
+  border-right: 5px solid #1098ad;*/
+
+
+  /*padding-top: 50px;
+  padding-bottom: 50px;*/
+  padding: 50px 0; /*padding: top/bottom left/right*/
+}
+
 
 /*24. Combining Selectors*/
 /*h1,
@@ -34,6 +80,7 @@ li {
 h1, h2, h3 {
   color: #1098ad;
 }
+
 /*3. External CSS*/
 h1 {
   /*color: blue;*/
@@ -48,11 +95,14 @@ h1 {
 h2 {
   font-size: 40px;
   /*font-family: sans-serif;*/
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
   /*font-family: sans-serif;*/
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -66,11 +116,24 @@ p {
   font-size: 22px;
   /*font-family: sans-serif;*/
   line-height: 1.5;
+  margin-bottom: 15px;
+
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   font-size: 20px;
+  margin-bottom: 10px;
   /*font-family: sans-serif;*/
+}
+
+li:last-child {
+  margin-bottom: 0; /*Quitar margen al último elemento de la lista*/
 }
 
 /*footer p {
@@ -99,23 +162,6 @@ li {
   list-style: none;
 }
 
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-
-  /*border: 5px solid #1098ad;*/
-  
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-
-  /*border-radius: 5px;*/ /*- Puntas Redondeadas*/
-
-  /*border-left: 5px solid #1098ad;
-  border-right: 5px solid #1098ad;*/
-}
 
 body {
   /*background-color: orangered;*/
@@ -211,6 +257,3 @@ nav p{
   font-size: 18px;
 }*/
 
-nav {
-  font-size: 18px;
-}
