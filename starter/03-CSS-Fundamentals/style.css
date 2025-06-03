@@ -9,6 +9,7 @@
 style, color, line-height, letter-spacing, text-align, text-transform, text-shadow, list-style, etc.*/
 /*No todas las propiedades se heredan. Principalmente son las relacionadas con el texto: familia de fuentes, tamaño de fuente, peso de fuente, estilo de fuente, color, altura de línea, espaciado de letras, alineación de texto, transformación de texto, sombra de texto, estilo de lista, etc. */
 
+/* PAGE SECTIONS */
 body {
   /*Estas propiedades son heredables. (Textos)*/
   /*color: red;*/
@@ -16,6 +17,15 @@ body {
   font-family: sans-serif;
   /*Esta no es una propiedad heredable*/
   /*border-top: 10px solid red;*/
+}
+
+.container{
+  width: 800px;
+  /*Centrar la pagina*/
+  /*margin-left: auto;
+  margin-right: auto;*/
+  /*Abreviado*/
+  margin: 0 auto;
 }
 
 .main-header {
@@ -26,7 +36,8 @@ body {
   /*padding: top/bottom left/right*/
   padding: 20px 40px; 
   margin-bottom: 60px;
-  height: 80px;
+  
+  /*height: 80px;*/ /*Al no fihar altura los elementos se distribuyen de forma vertical como block*/
 }
 
 nav {
@@ -67,7 +78,11 @@ li {
   color: #444;
 }*/
 
-h1, h2, h3 {
+
+/* SMALLER ELEMENTS */
+h1, 
+h2, 
+h3 {
   color: #1098ad;
 }
 
@@ -107,6 +122,7 @@ p {
   /*font-family: sans-serif;*/
   line-height: 1.5;
   margin-bottom: 15px;
+  
 }
 
 ul,
@@ -119,6 +135,7 @@ li {
   font-size: 20px;
   margin-bottom: 10px;
   /*font-family: sans-serif;*/
+  /*display: inline;*/
 }
 
 li:last-child {
@@ -151,19 +168,6 @@ li:last-child {
   list-style: none;
 }
 
-
-body {
-  /*background-color: orangered;*/
-}
-
-.container{
-  width: 800px;
-  /*Centrar la pagina*/
-  /*margin-left: auto;
-  margin-right: auto;*/
-  /*Abreviado*/
-  margin: 0 auto;
-}
 /*
 .first-li {
   font-weight: bold;
@@ -235,7 +239,27 @@ a:active {
 .post-img {
   width: 100%;
   height: auto;
+
+  /*Los elementos img se comportan como elementos inline-block*/
+  /*margin: 100px;*/
 }
+
+nav a:link {
+  /*background-color: orangered;
+  margin: 20px;
+  padding: 20px;*/ /* Crea un relleno naranjo, pero no crea un nuevo espacio vertical */
+  /*display: block;*/
+
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
 /* Resolving conflicts */
 /*#copyright {
   color: red;
