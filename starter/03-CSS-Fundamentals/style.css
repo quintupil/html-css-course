@@ -156,6 +156,14 @@ body {
   /*background-color: orangered;*/
 }
 
+.container{
+  width: 800px;
+  /*Centrar la pagina*/
+  /*margin-left: auto;
+  margin-right: auto;*/
+  /*Abreviado*/
+  margin: 0 auto;
+}
 /*
 .first-li {
   font-weight: bold;
