@@ -17,7 +17,6 @@ body {
   font-family: sans-serif;
   /*Esta no es una propiedad heredable*/
   /*border-top: 10px solid red;*/
-
   position: relative; /*Para que los elementos hijos puedan posicionarse de forma absoluta*/
 }
 
@@ -39,8 +38,8 @@ body {
   /*padding: top/bottom left/right*/
   padding: 20px 40px; 
   margin-bottom: 60px;
-  
-  /*height: 80px;*/ /*Al no fihar altura los elementos se distribuyen de forma vertical como block*/
+  /*height: 80px;*/ 
+  /*Al no fijar altura los elementos se distribuyen de forma vertical como block*/
 }
 
 nav {
@@ -70,7 +69,6 @@ aside {
   width: 500px;
 }
 
-
 /*24. Combining Selectors*/
 /*h1,
 h2,
@@ -81,7 +79,6 @@ li {
   font-family: sans-serif;
   color: #444;
 }*/
-
 
 /* SMALLER ELEMENTS */
 h1, 
@@ -127,7 +124,6 @@ p {
   line-height: 1.5;
   margin-bottom: 15px;
   /*display: inline;*/
-  
 }
 
 ul,
@@ -143,6 +139,7 @@ li {
   /*display: inline;*/
 }
 
+/*Pseudo classes usar simbolo ":" */
 li:last-child {
   margin-bottom: 0; /*Quitar margen al último elemento de la lista*/
 }
@@ -229,7 +226,6 @@ a:hover {
   font-weight: bold;
   text-decoration: underline orangered;
   //text-decoration: underline dotted orangered;
-
   //color: #f7f7f7;
   //background-color: #1098ad;
   //text-decoration: none;
@@ -239,12 +235,11 @@ a:active {
   background-color: black;
   font-style: italic
 }
-/*LVHA*/
 
+/*LVHA*/
 .post-img {
   width: 100%;
   height: auto;
-
   /*Los elementos img se comportan como elementos inline-block*/
   /*margin: 100px;*/
 }
@@ -254,11 +249,9 @@ nav a:link {
   margin: 20px;
   padding: 20px;*/ /* Crea un relleno naranjo, pero no crea un nuevo espacio vertical */
   /*display: block;*/
-
   margin-right: 30px;
   margin-top: 10px;
   display: inline-block;
-
 }
 
 nav a:link:last-child {
@@ -274,11 +267,53 @@ button {
   top: 50px;
   left: 50px;    
   */
-  
   bottom: 50px;
   right: 50px;
 }
 
+/*Pseudo-elements se utiliza simbolo "::"*/
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/*h2::first-letter {
+  font-size: 80px;
+}*/
+
+/*p::first-line {
+  color: red;
+}*/
+
+/*Se aplicara regla solo a los "<p>" donde su hermano adyacente es "<h3>"*/
+h3 + p::first-line {
+  color: red;
+}
+
+h2 {
+  /*background-color: orange;*/
+  position: relative;
+}
+
+/*
+  ::after se utiliza para añadir contenido después del elemento
+  ::before se utiliza para añadir contenido antes del elemento
+*/
+h2::after{
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  /*top: 0;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  top: -10px;
+  right: -25px;
+}
 /* Resolving conflicts */
 /*#copyright {
   color: red;
@@ -300,4 +335,3 @@ footer p {
 nav p{
   font-size: 18px;
 }*/
-
