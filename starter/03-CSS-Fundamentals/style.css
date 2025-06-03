@@ -3,27 +3,19 @@
   /*border-top: 10px solid #1098ad;*/
   margin: 0;
   padding: 0;
-
 }
+
 /*Not all properties get inherited. It’s mostly ones related to text: font-family, font-size, font-weight, font
 style, color, line-height, letter-spacing, text-align, text-transform, text-shadow, list-style, etc.*/
-
 /*No todas las propiedades se heredan. Principalmente son las relacionadas con el texto: familia de fuentes, tamaño de fuente, peso de fuente, estilo de fuente, color, altura de línea, espaciado de letras, alineación de texto, transformación de texto, sombra de texto, estilo de lista, etc. */
-
 
 body {
   /*Estas propiedades son heredables. (Textos)*/
   /*color: red;*/
   color: #444;
   font-family: sans-serif;
-
-  
   /*Esta no es una propiedad heredable*/
   /*border-top: 10px solid red;*/
-
-
-
-  
 }
 
 .main-header {
@@ -31,11 +23,10 @@ body {
   /*padding: 20px;
   padding-left: 40px;
   padding-right: 40px;*/
-
   /*padding: top/bottom left/right*/
   padding: 20px 40px; 
   margin-bottom: 60px;
-
+  height: 80px;
 }
 
 nav {
@@ -58,11 +49,10 @@ aside {
   /*border-radius: 5px;*/ /*- Puntas Redondeadas*/
   /*border-left: 5px solid #1098ad;
   border-right: 5px solid #1098ad;*/
-
-
   /*padding-top: 50px;
   padding-bottom: 50px;*/
   padding: 50px 0; /*padding: top/bottom left/right*/
+  width: 500px;
 }
 
 
@@ -117,7 +107,6 @@ p {
   /*font-family: sans-serif;*/
   line-height: 1.5;
   margin-bottom: 15px;
-
 }
 
 ul,
@@ -235,6 +224,10 @@ a:active {
 }
 /*LVHA*/
 
+.post-img {
+  width: 100%;
+  height: auto;
+}
 /* Resolving conflicts */
 /*#copyright {
   color: red;
