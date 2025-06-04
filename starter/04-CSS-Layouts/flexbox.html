@@ -48,15 +48,32 @@
         /*justify-content: center;*/
         /*justify-content: space-between;*/
         justify-content: flex-start;
-        gap: 30px;
+        gap: 10px;
       }
 
       .el {
-        /*margin-right: 30px;*/
+        /*
+        DEFAULTS:
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        */
+
+        /*flex-basis: 200px;*/
+        
+        /*flex-shrink: 0;*/ /*Proporción de encogimiento cuando el espacio es insuficiente (0=no encoge, 1+=se encoge)*/
+
+        /*flex-grow: 1;*/ /*Proporción de crecimiento para ocupar espacio sobrantes (0=no crece, 1+=crece)*/
+
+        /*flex: 0 0 200px;*/ /*Shorthand for flex-grow, flex-shrink, and flex-basis (1 1 auto)*/
+
+        flex: 1;
       }
+
       .el--1 {
         align-self: flex-start;
         /*order: 2;*/
+        /*flex-grow: 2;*/ /*This element will take up twice the space of others (Este elemento ocupará el doble de espacio que los demás.)*/ 
       }
 
       .el--5 {
@@ -76,7 +93,7 @@
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
+      <!--div class="el el--6">languages</div-->
       <!--div class="el el--7">to</div-->
       <!--div class="el el--8">learn</-div-->
     </div>
