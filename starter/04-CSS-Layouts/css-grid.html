@@ -14,7 +14,7 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
+        /*height: 150px;*/
       }
       .el--4 {
         background-color: goldenrod;
@@ -36,13 +36,33 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 30px;
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        /*grid-template-columns: 200px 200px 1fr 1fr;*/
+        /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+        /*grid-template-columns: 3fr 1fr 1fr 1fr;*/
+        /*grid-template-columns: 1fr 1fr 1fr auto;*/
+        /*grid-template-rows: 300px 200px;*/
+
+        grid-template-columns: repeat(4, 1fr);
+        /*grid-template-rows: 1fr 1fr;*/
+        grid-template-rows: 1fr auto;
+        height: 500px;
+
+        /*grid-gap == gap*/
+        /*gap: 30px;*/
+
+        column-gap: 10px;
+        row-gap: 40px;
+
       }
 
       .container--2 {
+        display: none;
+
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
@@ -66,6 +86,7 @@
       <div class="el el--6">(6) languages</div>
       <div class="el el--7">(7) to</div>
       <div class="el el--8">(8) learn</div>
+      
     </div>
 
     <div class="container--2">
